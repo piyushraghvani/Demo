@@ -272,10 +272,12 @@
       <div class="logo"><a href="https://www.openshift.com/"></a></div>
     </footer>
   </section>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script>
     function getData() {
-      $.get("https://sampleapplication-git-22-piyush-raghvani-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/demo", function (data, status) {
+      $.get("http://sampleapplication-git-23:8085/demo", function (data, status) {
         alert("Time: " + data + "\nStatus: " + status);
       });
     }
